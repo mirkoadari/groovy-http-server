@@ -24,7 +24,7 @@ class HttpServer implements Runnable {
                 sendHtmlResponse(
                         status: "HTTP/1.1 501 Not Implemented",
                         title: "Not Implemented",
-                        body: "<H2>501 Not Implemented: " + method + " method.</H2>")
+                        body: "<h2>501 Not Implemented: ${method} method.</h2>")
 
                 println "501 Not Implemented: ${method} method."
             } else {
